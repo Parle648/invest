@@ -1,0 +1,38 @@
+
+$brackpoints: (
+    sm: 440px,
+    md: 804px,
+    lg: 1090px,
+    lg-m: 1024,
+    xl: 1380px,
+    xxl: 1600px,
+);
+
+@mixin  forText {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@mixin  forTtl {
+    font-family: 'Rubik';
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 43px;
+    text-align: left;
+}
+
+@mixin  forBtn {
+    font-family: 'Open Sans';
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 24px;
+    &:hover{
+        cursor: pointer;
+    }
+}
