@@ -8,6 +8,10 @@
 .wrapper{
     width: 1000px;
     margin: 0 auto;
+    @include lg-d{
+        width: 95%;
+        margin: 0 auto;
+    }
 }
 
 .header-bacground{
@@ -57,6 +61,7 @@
                 margin-left: 23px;
                 &:hover{
                     color: rgb(166, 166, 166);
+                    border-color: rgb(166, 166, 166);
                     background-color: rgba(255, 255, 255, 0.649);
                 }
             }
@@ -126,19 +131,43 @@ main{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
+        @include lg-m-d{
+            flex-direction: column-reverse;
+            height: 850px;
+        }
+        @include lg-d{
+            height: 660px;
+        }
         .game {
             margin-right: 100px;
+            @include lg-m-d{
+                margin: 0px;
+                width: 95%;
+            }
         }
         .game-intro{
+            @include lg-d{
+                width: 95%
+            }
             .game-ttl {
                 @include forTtl;
                 color: #29246A;
                 width: 554px;
                 margin-bottom: 30px;
+                @include lg-d{
+                    width: 95%;
+                    font-size: 25px;
+                    line-height: 30px;
+                }
             }
             .game-subttl {
                 @include forText;
                 width: 445px;
+                @include lg-d{
+                    width: 95%;
+                    font-size: 14px;
+                    line-height: 30px;
+                }
             }
         }
     }
@@ -156,6 +185,10 @@ main{
     .choose-carousel {
         display: flex;
         justify-content: space-between;
+        @include lg-d{
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
         .chosee-carousel-item {
             width: 235px;
             height: 385px;
@@ -163,6 +196,10 @@ main{
             box-shadow: 2px 4px 30px #C2C2FC;
             border-radius: 5px;
             transition-duration: .3s;
+            @include lg-d{
+                margin-bottom: 20px;
+                margin-left: 15px;
+            }
             &:hover{
                 cursor: pointer;
                 transform: scale(1.1);
@@ -228,13 +265,19 @@ main{
                 font-weight: 400;
             }
         }
+        .chosee-carousel-item:first-child{
+            @include lg-d{
+                margin-left: 0px;
+            }
+        }
     }
 }
 
 
 .faq-block {
     background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
-    height: 1503px;
+    height: auto;
+    padding-bottom: 80px;
     color: #fff;
     .faq-ttl {
         @include forTtl;
@@ -255,6 +298,9 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+                    @include lg-d{
+                        width: 95%;
+                    }
                     .plus {
                         background-color: #fff;
                         border-radius: 50%;
@@ -276,12 +322,26 @@ main{
                 margin-top: 130px;
                 padding: 61px 0 0 68px;
                 position: relative;
+                @include lg-d{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    padding: 61px 0 0 0px;
+                }
                 .call-intro {
+                    @include lg-d{
+                        margin-bottom: 100px;
+                    }
                     .call-ttl {
                         @include forTtl;
                         color: #29246A;
                         font-weight: 700;
                         margin-bottom: 21px;
+                        @include md-d{
+                            width: 75%;
+                            text-align: center;
+                        }
                     }
                     .call-subttl {
                         font-family: 'Open Sans';
@@ -290,6 +350,10 @@ main{
                         color: #4F4F4F;
                         margin-bottom: 41px;
                         width: 381px;
+                        @include md-d{
+                            width: 95%;
+                            text-align: center;
+                        }
                     }
                     .call-us-btn {
                         @include forBtn;
@@ -299,12 +363,19 @@ main{
                         font-family: 'Open Sans';
                         font-size: 18px;
                         font-weight: 600;
-                    }
+                        @include lg-d{
+                            font-size: 14px;
+                            padding: 17px 41px 18px;
+                        }
                 }
                 .call {
                     position: absolute;
                     right: 18px;
                     top: 0;
+                    @include lg-d{
+                        position: relative;
+                        width: 95%;
+                    }
                 }
             }
             
@@ -316,6 +387,10 @@ main{
     display: flex;
     justify-content: space-between;
     margin: 138px 0px 287px;
+    @include lg-m-d{
+        flex-direction: column;
+        align-items: center;
+    }
     .invest-imgs {
         position: relative;
         margin-right: 81px;
@@ -334,6 +409,9 @@ main{
         .investment-ttl {
             @include forTtl;
             color: #29246A;
+            @include lg-m-d{
+                margin-top: 200px;
+            }
         }
         .investment-subt {
             @include forText;
@@ -351,14 +429,33 @@ main{
     position: relative;
     z-index: 5;
     margin-bottom: 176px;
+    @include lg-d{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        width: 95%;
+    }
     .rules {
         margin-right: 90px;
+        margin: 0 auto;
+        @include md-d{
+            width: 95%;
+        }
     }
     .rules-inner {
+        @include lg-d{
+            width: 95%;
+            margin-bottom: 100px;
+            text-align: center
+        }
         .rules-ttl {
             @include forTtl;
             color: #29246A;
             margin-bottom: 31px;
+            @include lg-d{
+                font-size: 29px;
+            }
         }
         .rules-btn {
             @include forBtn;
@@ -368,16 +465,11 @@ main{
             font-family: 'Open Sans';
             font-size: 18px;
             font-weight: 600;
+            @include lg-d{
+                font-size: 14px;
+                padding: 17px 41px 18px;
+            }
         }
-    }
-    .rules-circle{
-        position: absolute;
-        right: -50%;
-        top: -50%;
-        width: 462px;
-        height: 462px;
-        border-radius: 50%;
-        background-color: #EFF6FF;
     }
 }
 
@@ -413,4 +505,5 @@ footer{
             }
         }
     }
+}
 }

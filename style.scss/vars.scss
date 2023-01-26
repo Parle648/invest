@@ -2,8 +2,8 @@
 $brackpoints: (
     sm: 440px,
     md: 804px,
-    lg: 1090px,
-    lg-m: 1024,
+    lg: 1160px,
+    lg-m: 1240,
     xl: 1380px,
     xxl: 1600px,
 );
@@ -14,7 +14,6 @@ $brackpoints: (
     font-weight: 400;
     line-height: 25px;
     letter-spacing: 0em;
-    text-align: left;
 }
 
 @mixin  forTtl {
@@ -22,7 +21,6 @@ $brackpoints: (
     font-size: 35px;
     font-weight: 500;
     line-height: 43px;
-    text-align: left;
 }
 
 @mixin  forBtn {

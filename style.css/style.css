@@ -7,6 +7,12 @@
   width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 1159.8px) {
+  .wrapper {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
 
 .header-bacground {
   height: 528px;
@@ -77,6 +83,7 @@
 }
 .header-bacground header .user-interf .link-btn:hover {
   color: rgb(166, 166, 166);
+  border-color: rgb(166, 166, 166);
   background-color: rgba(255, 255, 255, 0.649);
 }
 
@@ -96,7 +103,6 @@
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
-  text-align: left;
   width: 442px;
   margin-bottom: 43px;
 }
@@ -169,18 +175,49 @@ main .game-container {
           align-items: center;
   margin-bottom: 100px;
 }
+@media (max-width: 1239.8px) {
+  main .game-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 850px;
+  }
+}
+@media (max-width: 1159.8px) {
+  main .game-container {
+    height: 660px;
+  }
+}
 main .game-container .game {
   margin-right: 100px;
+}
+@media (max-width: 1239.8px) {
+  main .game-container .game {
+    margin: 0px;
+    width: 95%;
+  }
+}
+@media (max-width: 1159.8px) {
+  main .game-container .game-intro {
+    width: 95%;
+  }
 }
 main .game-container .game-intro .game-ttl {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   color: #29246A;
   width: 554px;
   margin-bottom: 30px;
+}
+@media (max-width: 1159.8px) {
+  main .game-container .game-intro .game-ttl {
+    width: 95%;
+    font-size: 25px;
+    line-height: 30px;
+  }
 }
 main .game-container .game-intro .game-subttl {
   font-family: "Open Sans";
@@ -188,8 +225,14 @@ main .game-container .game-intro .game-subttl {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
-  text-align: left;
   width: 445px;
+}
+@media (max-width: 1159.8px) {
+  main .game-container .game-intro .game-subttl {
+    width: 95%;
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .choose-plan {
@@ -200,7 +243,6 @@ main .game-container .game-intro .game-subttl {
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   color: #29246A;
   font-weight: 700;
   text-align: center;
@@ -214,6 +256,14 @@ main .game-container .game-intro .game-subttl {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1159.8px) {
+  .choose-plan .choose-carousel {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .choose-plan .choose-carousel .chosee-carousel-item {
   width: 235px;
   height: 385px;
@@ -223,6 +273,12 @@ main .game-container .game-intro .game-subttl {
   border-radius: 5px;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+}
+@media (max-width: 1159.8px) {
+  .choose-plan .choose-carousel .chosee-carousel-item {
+    margin-bottom: 20px;
+    margin-left: 15px;
+  }
 }
 .choose-plan .choose-carousel .chosee-carousel-item:hover {
   cursor: pointer;
@@ -305,10 +361,16 @@ main .game-container .game-intro .game-subttl {
 .choose-plan .choose-carousel .chosee-carousel-item .choose-carousel-btn:hover {
   cursor: pointer;
 }
+@media (max-width: 1159.8px) {
+  .choose-plan .choose-carousel .chosee-carousel-item:first-child {
+    margin-left: 0px;
+  }
+}
 
 .faq-block {
   background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
-  height: 1503px;
+  height: auto;
+  padding-bottom: 80px;
   color: #fff;
 }
 .faq-block .faq-ttl {
@@ -316,7 +378,6 @@ main .game-container .game-intro .game-subttl {
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   text-align: center;
   padding-top: 149px;
   margin-bottom: 70px;
@@ -338,6 +399,11 @@ main .game-container .game-intro .game-subttl {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 1159.8px) {
+  .faq-block .faq-accordeon .wrapper .faq-question .question {
+    width: 95%;
+  }
+}
 .faq-block .faq-accordeon .wrapper .faq-question .question .plus {
   background-color: #fff;
   border-radius: 50%;
@@ -357,15 +423,41 @@ main .game-container .game-intro .game-subttl {
   padding: 61px 0 0 68px;
   position: relative;
 }
+@media (max-width: 1159.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    padding: 61px 0 0 0px;
+  }
+}
+@media (max-width: 1159.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container .call-intro {
+    margin-bottom: 100px;
+  }
+}
 .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-ttl {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   color: #29246A;
   font-weight: 700;
   margin-bottom: 21px;
+}
+@media (max-width: 803.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-ttl {
+    width: 75%;
+    text-align: center;
+  }
 }
 .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-subttl {
   font-family: "Open Sans";
@@ -374,6 +466,12 @@ main .game-container .game-intro .game-subttl {
   color: #4F4F4F;
   margin-bottom: 41px;
   width: 381px;
+}
+@media (max-width: 803.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-subttl {
+    width: 95%;
+    text-align: center;
+  }
 }
 .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-us-btn {
   font-family: "Open Sans";
@@ -392,13 +490,24 @@ main .game-container .game-intro .game-subttl {
 .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-us-btn:hover {
   cursor: pointer;
 }
-.faq-block .faq-accordeon .wrapper .call-us-container .call {
+@media (max-width: 1159.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call-us-btn {
+    font-size: 14px;
+    padding: 17px 41px 18px;
+  }
+}
+.faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call {
   position: absolute;
   right: 18px;
   top: 0;
 }
-
-.investment-container {
+@media (max-width: 1159.8px) {
+  .faq-block .faq-accordeon .wrapper .call-us-container .call-intro .call {
+    position: relative;
+    width: 95%;
+  }
+}
+.faq-block .investment-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -407,41 +516,54 @@ main .game-container .game-intro .game-subttl {
           justify-content: space-between;
   margin: 138px 0px 287px;
 }
-.investment-container .invest-imgs {
+@media (max-width: 1239.8px) {
+  .faq-block .investment-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.faq-block .investment-container .invest-imgs {
   position: relative;
   margin-right: 81px;
 }
-.investment-container .invest-imgs .investment {
+.faq-block .investment-container .invest-imgs .investment {
   z-index: 2;
   position: relative;
 }
-.investment-container .invest-imgs .investment:last-child {
+.faq-block .investment-container .invest-imgs .investment:last-child {
   position: absolute;
   left: 0;
   bottom: -95px;
   z-index: 0;
 }
-.investment-container .investment-intro .investment-ttl {
+.faq-block .investment-container .investment-intro .investment-ttl {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   color: #29246A;
 }
-.investment-container .investment-intro .investment-subt {
+@media (max-width: 1239.8px) {
+  .faq-block .investment-container .investment-intro .investment-ttl {
+    margin-top: 200px;
+  }
+}
+.faq-block .investment-container .investment-intro .investment-subt {
   font-family: "Open Sans";
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0em;
-  text-align: left;
   color: #4F4F4F;
   width: 487px;
   margin-top: 41px;
 }
-
-.rules-container {
+.faq-block .rules-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -455,19 +577,52 @@ main .game-container .game-intro .game-subttl {
   z-index: 5;
   margin-bottom: 176px;
 }
-.rules-container .rules {
-  margin-right: 90px;
+@media (max-width: 1159.8px) {
+  .faq-block .rules-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: auto;
+    width: 95%;
+  }
 }
-.rules-container .rules-inner .rules-ttl {
+.faq-block .rules-container .rules {
+  margin-right: 90px;
+  margin: 0 auto;
+}
+@media (max-width: 803.8px) {
+  .faq-block .rules-container .rules {
+    width: 95%;
+  }
+}
+@media (max-width: 1159.8px) {
+  .faq-block .rules-container .rules-inner {
+    width: 95%;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+}
+.faq-block .rules-container .rules-inner .rules-ttl {
   font-family: "Rubik";
   font-size: 35px;
   font-weight: 500;
   line-height: 43px;
-  text-align: left;
   color: #29246A;
   margin-bottom: 31px;
 }
-.rules-container .rules-inner .rules-btn {
+@media (max-width: 1159.8px) {
+  .faq-block .rules-container .rules-inner .rules-ttl {
+    font-size: 29px;
+  }
+}
+.faq-block .rules-container .rules-inner .rules-btn {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
@@ -481,24 +636,20 @@ main .game-container .game-intro .game-subttl {
   font-size: 18px;
   font-weight: 600;
 }
-.rules-container .rules-inner .rules-btn:hover {
+.faq-block .rules-container .rules-inner .rules-btn:hover {
   cursor: pointer;
 }
-.rules-container .rules-circle {
-  position: absolute;
-  right: -50%;
-  top: -50%;
-  width: 462px;
-  height: 462px;
-  border-radius: 50%;
-  background-color: #EFF6FF;
+@media (max-width: 1159.8px) {
+  .faq-block .rules-container .rules-inner .rules-btn {
+    font-size: 14px;
+    padding: 17px 41px 18px;
+  }
 }
-
-footer {
+.faq-block footer {
   background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
   height: 154px;
 }
-footer .wrapper {
+.faq-block footer .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -510,7 +661,7 @@ footer .wrapper {
           align-items: center;
   padding-top: 50px;
 }
-footer .wrapper .logo-wrapper {
+.faq-block footer .wrapper .logo-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,18 +669,18 @@ footer .wrapper .logo-wrapper {
       -ms-flex-align: center;
           align-items: center;
 }
-footer .wrapper .logo-wrapper .logo {
+.faq-block footer .wrapper .logo-wrapper .logo {
   margin-right: 19px;
 }
-footer .wrapper .logo-wrapper .company-name {
+.faq-block footer .wrapper .logo-wrapper .company-name {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   font-family: "Open Sans";
 }
-footer .wrapper .logo-wrapper .user-interf .social .social-img {
+.faq-block footer .wrapper .logo-wrapper .user-interf .social .social-img {
   margin-left: 20px;
 }
-footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
+.faq-block footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
   cursor: pointer;
 }
