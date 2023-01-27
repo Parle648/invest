@@ -1,0 +1,52 @@
+.investment-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 138px 0px 287px;
+    @include lg-m-d{
+        flex-direction: column;
+        align-items: center;
+    }
+    @include md-d{
+        margin-bottom: 100px;
+        margin-top: 19px;
+    }
+    .invest-imgs {
+        position: relative;
+        margin-right: 81px;
+        @include md-d{
+            display: none;
+        }
+        .investment{
+            z-index: 2;
+            position: relative;
+        }
+        .investment:last-child{
+            position: absolute;
+            left: 0;
+            bottom: -95px;
+            z-index: 0;
+        }
+    }
+    .investment-intro {
+        @include md-d{
+            margin-top: -100px;
+        }
+        .investment-ttl {
+            @include forTtl;
+            color: #29246A;
+            @include lg-m-d{
+                margin: 200px 0 0 25px;
+            }
+        }
+        .investment-subt {
+            @include forText;
+            color: #4F4F4F;
+            width: 487px;
+            margin-top: 41px;
+            @include sm-d{
+                width: 95%;
+                margin: 41px auto 0;
+            }
+        }
+    }
+}

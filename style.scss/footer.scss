@@ -1,0 +1,33 @@
+footer{
+    background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+    height: 154px;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50px;
+        .logo-wrapper {
+            display: flex;
+            align-items: center;
+            .logo {
+                margin-right: 19px;
+            }
+            .company-name {
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                font-family: 'Open Sans';
+            }
+            .user-interf {
+                .social {
+                    .social-img {
+                        margin-left: 20px;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

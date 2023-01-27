@@ -1,0 +1,131 @@
+.faq-block {
+    background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+    height: auto;
+    padding-bottom: 80px;
+    color: #fff;
+
+    .faq-ttl {
+        @include forTtl;
+        text-align: center;
+        padding-top: 149px;
+        margin-bottom: 70px;
+    }
+
+    .faq-accordeon {
+        .wrapper {
+            .faq-question {
+                .question {
+                    font-family: 'Rubik';
+                    font-size: 25px;
+                    font-weight: 500;
+                    width: 1000px;
+                    margin: 0px auto;
+                    padding: 25px 0px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    @include lg-d {
+                        width: 95%;
+                    }
+
+                    .plus {
+                        background-color: #fff;
+                        border-radius: 50%;
+                        padding: 9px;
+                        transition-duration: .3s;
+
+                        &:hover {
+                            cursor: pointer;
+                            background-color: #87B9FA;
+                        }
+                    }
+                }
+            }
+
+            .call-us-container {
+                background-color: #fff;
+                border-radius: 10px;
+                height: 325px;
+                margin-top: 130px;
+                padding: 61px 0 0 68px;
+                position: relative;
+                display: flex;
+                @include lg-d {
+                    flex-direction: column;
+                    align-items: center;
+                    height: auto;
+                    padding: 61px 0 0 0px;
+                }
+                
+                .call-intro {
+                    margin-right: 86px;
+                    @include lg-d {
+                        margin-bottom: 100px;
+                    }
+                    @include lg-d {
+                        margin-right: 0px;
+                        text-align: center
+                    }
+
+                    .call-ttl {
+                        @include forTtl;
+                        color: #29246A;
+                        font-weight: 700;
+                        margin-bottom: 21px;
+
+                        @include md-d {
+                            width: 90%;
+                            margin: 0 auto;
+                        }
+                    }
+                    
+                    .call-subttl {
+                        font-family: 'Open Sans';
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: #4F4F4F;
+                        margin-bottom: 41px;
+                        width: 381px;
+
+                        @include md-d {
+                            width: 90%;
+                            margin: 0 auto;
+                            margin-bottom: 25px;
+                        }
+                    }
+
+                    .call-us-btn {
+                        @include forBtn;
+                        background: linear-gradient(233.48deg, #F9A85D 12.64%, #FE5C73 107.8%);
+                        border: 0px;
+                        padding: 17px 61px 18px;
+                        font-family: 'Open Sans';
+                        font-size: 18px;
+                        font-weight: 600;
+
+                        @include lg-d {
+                            font-size: 14px;
+                            padding: 17px 41px 18px;
+                        }
+                    }
+
+                }
+                .call {
+                    position: absolute;
+                    right: 3px;
+                    top: 0;
+
+                    @include lg-d {
+                        position: relative;
+                        width: 95%;
+                    }
+                    @include sm-d{
+                        width: 300px;
+                    }
+                }
+
+            }
+        }
+    }
+}

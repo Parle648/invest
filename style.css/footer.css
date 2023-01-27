@@ -1,0 +1,39 @@
+footer {
+  background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+  height: 154px;
+}
+footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50px;
+}
+footer .wrapper .logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .wrapper .logo-wrapper .logo {
+  margin-right: 19px;
+}
+footer .wrapper .logo-wrapper .company-name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+footer .wrapper .logo-wrapper .user-interf .social .social-img {
+  margin-left: 20px;
+}
+footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
+  cursor: pointer;
+}

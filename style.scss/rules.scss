@@ -1,0 +1,50 @@
+.rules-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    margin-bottom: 176px;
+    @include lg-d{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        width: 95%;
+    }
+    .rules {
+        margin-right: 90px;
+        margin: 0 auto;
+        @include md-d{
+            width: 95%;
+        }
+    }
+    .rules-inner {
+        @include lg-d{
+            width: 95%;
+            margin-bottom: 100px;
+            text-align: center
+        }
+        .rules-ttl {
+            @include forTtl;
+            color: #29246A;
+            margin-bottom: 31px;
+            @include lg-d{
+                font-size: 29px;
+            }
+        }
+        .rules-btn {
+            @include forBtn;
+            background: linear-gradient(233.48deg, #F9A85D 12.64%, #FE5C73 107.8%);
+            border: 0px;
+            padding: 17px 91px 18px;
+            font-family: 'Open Sans';
+            font-size: 18px;
+            font-weight: 600;
+            @include lg-d{
+                font-size: 14px;
+                padding: 17px 41px 18px;
+            }
+        }
+    }
+}
