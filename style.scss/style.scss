@@ -17,11 +17,195 @@
         margin: 0 auto;
     }
 }
+.log-in-wrapper{
+    .log-in-block {
+        position: relative;
+        display: none;
+        width: 490px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin: 0 auto;
+        height: 480px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        opacity: 0;
+        box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+        .log-inner-wrapper{
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .close-log-pop {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .log-in-ttl {
+                @include forTtl;
+                color: #29246A;
+                text-align: center;
+                padding-top: 43px;
+                margin-bottom: 32px;
+            }
+            .login-input{
+                display: block;
+                width: 392px;
+                margin-bottom: 14px;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                color: #ccc;
+                font-size: 12px;
+                padding: 15px 0px 17px 22px;
+            }
+            .forgot-passwd {
+                color: #4D92EB;
+                text-decoration: none;
+                font-size: 12px;
+                font-family: 'Open Sans';
+                display: block;
+                margin-bottom: 23px;
+                align-self: flex-start;
+            }
+            .continue {
+                @include forBtn;
+                padding: 15px 138px;
+                background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+                border: 0px;
+                font-family: 'Open Sans';
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 31px;
+                border-radius: 30px;    
+            }
+            .without-profile {
+                font-weight: 400;
+                font-size: 14px;
+                color: #4F4F4F;
+                text-align: center;
+                width: 309px;
+                font-family: 'Open Sans';
+                .sing-in{
+                    color: red($color: #f16666);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    .display{
+        display: block;
+        opacity: 1;
+        transition-duration: .3s;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+}
+
+.registration-wrapper {
+    .registration-block {
+        position: relative;
+        width: 540px;
+        background-color: #fff;
+        display: none;
+        border-radius: 10px;
+        margin: 0 auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition-property: display, opacity;
+        transition-duration: 0, .3s ;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        opacity: 0;
+        height: auto;
+        padding-bottom: 25px;
+        box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+        .registration-inner-wrapper{
+            width: 400px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .close-pop {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .registration-ttl {
+                @include forTtl;
+                color: #29246A;
+                text-align: center;
+                padding-top: 43px;
+                margin-bottom: 32px;
+            }
+            .resgistr-input{
+                display: block;
+                width: 392px;
+                margin-bottom: 14px;
+                background-color: #fff;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+                color: #ccc;
+                font-size: 12px;
+                padding: 15px 0px 17px 22px;
+            }
+            .registration {
+                @include forBtn;
+                padding: 15px 138px;
+                background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+                border: 0px;
+                font-family: 'Open Sans';
+                font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 31px;
+                border-radius: 30px;    
+            }
+            .is-profile{
+                font-weight: 400;
+                font-size: 14px;
+                color: #4F4F4F;
+                text-align: center;
+                width: 309px;
+                font-family: 'Open Sans';
+                .sing-in{
+                    color: red($color: #911b1b);
+                    text-decoration: none;
+                    transition-duration: .3s;
+                    &:hover{
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .display{
+        display: block;
+        opacity: 1;
+        transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+}
+
 
 .header-bacground{
     height: 528px;
     background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
     margin-bottom: 88px;
+    
     header{
         margin: 0px auto 50px;
         padding-top: 30px;
@@ -107,7 +291,7 @@
             width: 95%;
         }
     }
-    .registration {
+    .registration-btn {
         @include forBtn;
         font-family: 'Rubik';
         font-size: 25px;
@@ -302,3 +486,4 @@ main{
         }
     }
 }
+

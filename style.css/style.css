@@ -372,6 +372,236 @@ footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
   }
 }
 
+.log-in-wrapper .log-in-block {
+  position: relative;
+  display: none;
+  width: 490px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 480px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+  -webkit-box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+          box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper {
+  width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .close-log-pop {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .close-log-pop:hover {
+  cursor: pointer;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .log-in-ttl {
+  font-family: "Rubik";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+  color: #29246A;
+  text-align: center;
+  padding-top: 43px;
+  margin-bottom: 32px;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .login-input {
+  display: block;
+  width: 392px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 12px;
+  padding: 15px 0px 17px 22px;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .forgot-passwd {
+  color: #4D92EB;
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "Open Sans";
+  display: block;
+  margin-bottom: 23px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .continue {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 24px;
+  padding: 15px 138px;
+  background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+  border: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 31px;
+  border-radius: 30px;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .continue:hover {
+  cursor: pointer;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .without-profile {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4F4F4F;
+  text-align: center;
+  width: 309px;
+  font-family: "Open Sans";
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .without-profile .sing-in {
+  color: 241;
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.log-in-wrapper .log-in-block .log-inner-wrapper .without-profile .sing-in:hover {
+  text-decoration: underline;
+}
+.log-in-wrapper .display {
+  display: block;
+  opacity: 1;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.registration-wrapper .registration-block {
+  position: relative;
+  width: 540px;
+  background-color: #fff;
+  display: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition-property: display, opacity;
+  transition-property: display, opacity;
+  -webkit-transition-duration: 0, 0.3s;
+          transition-duration: 0, 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  opacity: 0;
+  height: auto;
+  padding-bottom: 25px;
+  -webkit-box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+          box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+}
+.registration-wrapper .registration-block .registration-inner-wrapper {
+  width: 400px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .close-pop {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .close-pop:hover {
+  cursor: pointer;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .registration-ttl {
+  font-family: "Rubik";
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 43px;
+  color: #29246A;
+  text-align: center;
+  padding-top: 43px;
+  margin-bottom: 32px;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .resgistr-input {
+  display: block;
+  width: 392px;
+  margin-bottom: 14px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 12px;
+  padding: 15px 0px 17px 22px;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .registration {
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 24px;
+  padding: 15px 138px;
+  background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
+  border: 0px;
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 31px;
+  border-radius: 30px;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .registration:hover {
+  cursor: pointer;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .is-profile {
+  font-weight: 400;
+  font-size: 14px;
+  color: #4F4F4F;
+  text-align: center;
+  width: 309px;
+  font-family: "Open Sans";
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .is-profile .sing-in {
+  color: 145;
+  text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.registration-wrapper .registration-block .registration-inner-wrapper .is-profile .sing-in:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.registration-wrapper .display {
+  display: block;
+  opacity: 1;
+  -webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+          transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 .header-bacground {
   height: 528px;
   background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
@@ -493,7 +723,7 @@ footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
     width: 95%;
   }
 }
-.title .registration {
+.title .registration-btn {
   font-family: "Open Sans";
   font-size: 12px;
   font-weight: 400;
@@ -510,16 +740,16 @@ footer .wrapper .logo-wrapper .user-interf .social .social-img:hover {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-.title .registration:hover {
+.title .registration-btn:hover {
   cursor: pointer;
 }
 @media (max-width: 803.8px) {
-  .title .registration {
+  .title .registration-btn {
     font-size: 18px;
     padding: 15px 35px 16px;
   }
 }
-.title .registration:hover {
+.title .registration-btn:hover {
   background-color: rgba(57, 50, 155, 0.9529411765);
 }
 
