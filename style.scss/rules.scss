@@ -6,43 +6,6 @@
     z-index: 5;
     margin-bottom: 176px;
     position: relative;
-    .rules-pop {
-        background-color: #fff;
-        border: 1px solid #97C1F6;
-        border-radius: 10px;
-        position: absolute;
-        margin: 0 auto;
-        left: 50%;
-        top: -20%;
-        transform: translate(-50%, -50%) scale(0);
-        transition-duration: .1s;
-        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        .close-rules-pop {
-            transform: rotate(45deg);
-            position: absolute;
-            right: 25px;
-            width: 24px;
-            height: 24px;
-            top: 25px;
-            &:hover{
-                cursor: pointer;
-            }
-        }
-        .rules-pop-parragr{
-            padding: 105px 65px 91px;
-            width: 870px;
-            color: #828282;
-            font-family: 'Open Sans';
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 22px;
-        }
-    }
-    .rules-active{
-        transform: translate(-50%, -50%) scale(1);
-        transition-duration: .3s;
-        transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    }
     @include lg-d{
         display: flex;
         flex-direction: column-reverse;
@@ -83,6 +46,43 @@
                 font-size: 14px;
                 padding: 17px 41px 18px;
             }
+        }
+        .rules-pop {
+            background-color: #fff;
+            border: 1px solid #97C1F6;
+            border-radius: 10px;
+            position: absolute;
+            margin: 0 auto;
+            left: 50%;
+            top: -20%;
+            transform: translate(-50%, -50%) scale(0);
+            transition-duration: .1s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            .close-rules-pop {
+                transform: rotate(45deg);
+                position: absolute;
+                right: 25px;
+                width: 24px;
+                height: 24px;
+                top: 25px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            .rules-pop-parragr{
+                padding: 105px 65px 91px;
+                width: 870px;
+                color: #828282;
+                font-family: 'Open Sans';
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+        .rules-active{
+            transform: translate(-50%, -50%) scale(1);
+            transition-duration: .3s;
+            transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
     }
 }
