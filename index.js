@@ -26,3 +26,41 @@ closeRegistrBtn.onclick = function(){
     document.body.style.overflow='auto'
 }
 
+
+//accorderon code
+const accordeonBtn = document.querySelectorAll('.plus');
+
+accordeonBtn.forEach(function(e){
+    e.onclick = function(event){
+        let targetBlock = event.target.parentNode.nextElementSibling;
+        
+        if(event.target.classList.contains('plus-active')){
+            event.target.classList.remove('plus-active')
+            targetBlock.classList.remove('active-paragr')
+        }
+        else{
+        accordeonBtn.forEach((i) => {
+            i.classList.remove('plus-active')
+            i.parentNode.nextElementSibling.classList.remove('active-paragr')
+        })
+
+        event.target.classList.toggle('plus-active')
+        targetBlock.classList.toggle('active-paragr')
+        }
+    }
+
+})
+
+
+//rules pop
+
+const RulePop = document.querySelector('.rules-pop'),
+      closeRulesBtn = document.querySelector('.close-rules-pop')
+
+document.querySelector('.rules-btn').onclick = function(){
+    RulePop.classList.add('rules-active')
+}
+
+closeRulesBtn.onclick = function(){
+    RulePop.classList.remove('rules-active')
+}

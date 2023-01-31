@@ -33,13 +33,46 @@
                         background-color: #fff;
                         border-radius: 50%;
                         padding: 9px;
-                        transition-duration: .3s;
+                        transition-duration: .6s;
 
                         &:hover {
                             cursor: pointer;
                             background-color: #87B9FA;
                         }
                     }
+                    .plus-active{
+                        transform: rotate(765deg);
+                    }
+                    
+                }
+                .faq-paragraph{
+                    transform: translate(0, -170px);
+                    opacity: 0;
+                    height: 0;
+                    z-index: 0;
+                    transition-property: opacity, height, transform, z-index;
+                    transition-duration: .2s, .2s, .4s, .1s;
+                    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                    .quest-ttl {
+                        font-family: 'Rubik';
+                        font-size: 25px;
+                        font-weight: 500;
+                        margin-bottom: 20px;
+                    }
+                    .question-paragr{
+                        font-family: 'Open Sans';
+                        font-size: 18px;
+                        font-weight: 400;
+                        width: 780px;
+                        margin-bottom: 30px;
+                    }
+                }
+                .active-paragr{
+                    opacity: 1;
+                    height: auto;
+                    transition-property: height, transform, opacity, z-index;
+                    transition-duration: .1s, .3s, .3s, .1s;
+                    transform: translate(10px, 10px);
                 }
             }
 
