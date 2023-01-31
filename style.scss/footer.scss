@@ -17,11 +17,14 @@ footer{
                 font-size: 18px;
                 font-weight: 600;
                 font-family: 'Open Sans';
+                width: 100px;
             }
             .user-interf {
+                display: flex;
+                flex-wrap: nowrap;
                 .social {
+                    margin-left: 20px;
                     .social-img {
-                        margin-left: 20px;
                         &:hover{
                             cursor: pointer;
                         }

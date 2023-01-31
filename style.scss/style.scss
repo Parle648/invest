@@ -17,8 +17,16 @@
         margin: 0 auto;
     }
 }
+
 .log-in-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: #4f4f4f9f;
+    z-index: 3;
+    position: absolute;
+    display: none;
     .log-in-block {
+        z-index: 4;
         position: relative;
         display: none;
         width: 490px;
@@ -34,12 +42,21 @@
         transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
         opacity: 0;
         box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+        @include sm-d{
+            width: 80%;
+            height: auto;
+            padding-bottom: 20px;
+        }
         .log-inner-wrapper{
             width: 400px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include sm-d{
+                width: 90%;
+                padding: 15px 0px 17px;
+            }
             .close-log-pop {
                 position: absolute;
                 right: 15px;
@@ -65,6 +82,10 @@
                 color: #ccc;
                 font-size: 12px;
                 padding: 15px 0px 17px 22px;
+                @include sm-d{
+                    width: 95%;
+                    padding: 15px 0px 17px 10px;
+                }
             }
             .forgot-passwd {
                 color: #4D92EB;
@@ -84,7 +105,11 @@
                 font-weight: 600;
                 font-size: 18px;
                 margin-bottom: 31px;
-                border-radius: 30px;    
+                border-radius: 30px;   
+                @include sm-d{
+                    width: 100%;
+                    padding: 15px 0px 17px;
+                } 
             }
             .without-profile {
                 font-weight: 400;
@@ -93,6 +118,9 @@
                 text-align: center;
                 width: 309px;
                 font-family: 'Open Sans';
+                @include sm-d{
+                    width: 100%;
+                }
                 .sing-in{
                     color: red($color: #f16666);
                     text-decoration: none;
@@ -113,6 +141,12 @@
 }
 
 .registration-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #4f4f4f9f;
+    z-index: 3;
+    position: absolute;
+    display: none;
     .registration-block {
         position: relative;
         width: 540px;
@@ -131,12 +165,21 @@
         height: auto;
         padding-bottom: 25px;
         box-shadow: 0px 0px 100px 75px rgba(34, 60, 80, 0.22);
+        @include sm-d{
+            width: 80%;
+            height: auto;
+            padding-bottom: 20px;
+        }
         .registration-inner-wrapper{
             width: 400px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include sm-d{
+                width: 90%;
+                padding: 15px 0px 17px;
+            }
             .close-pop {
                 position: absolute;
                 right: 15px;
@@ -162,6 +205,10 @@
                 color: #ccc;
                 font-size: 12px;
                 padding: 15px 0px 17px 22px;
+                @include sm-d{
+                    width: 95%;
+                    padding: 15px 0px 17px 10px;
+                }
             }
             .registration {
                 @include forBtn;
@@ -172,7 +219,11 @@
                 font-weight: 600;
                 font-size: 18px;
                 margin-bottom: 31px;
-                border-radius: 30px;    
+                border-radius: 30px;  
+                @include sm-d{
+                    width: 100%;
+                    padding: 15px 0px 17px;
+                }   
             }
             .is-profile{
                 font-weight: 400;
@@ -205,9 +256,14 @@
     height: 528px;
     background: linear-gradient(258.66deg, #9754FF -4.76%, #87B9FA 119.06%);
     margin-bottom: 88px;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 0 100%);
+    @include sm-d{
+        height: auto;
+        padding-bottom: 120px;
+    }
     
     header{
-        margin: 0px auto 50px;
+        margin: 0px auto 55px;
         padding-top: 30px;
         display: flex;
         justify-content: space-between;
@@ -243,32 +299,29 @@
                 }
                 .social-img {
                     border-radius: 50%;
-                    margin-right: 7px;
+                    margin-right: 5px;
                     &:hover{
                         cursor: pointer;
                     }
                 }
             }
             .link-btn {
-                height: 36px;
+                height: 34px;
                 @include forBtn;
-                padding: 10px 62px 27px;
+                padding: 6px 40px 10px;
                 border: 1px solid #fff;
                 transition-duration: .3s;
                 transition-delay: .05s;
-                margin-left: 23px;
+                margin-left: 44px;
                 &:hover{
-                    color: rgb(166, 166, 166);
-                    border-color: rgb(166, 166, 166);
-                    background-color: rgba(255, 255, 255, 0.649);
+                    color: rgba(58, 58, 58, 0.95);
+                    border-color: rgba(255, 255, 255, 95);
+                    background-color: rgba(255, 255, 255, 0.95);
                 }
             }
         }
     }
 }
-
-    
-    
     
 .title {
     color: #fff;
@@ -278,9 +331,11 @@
         font-weight: 700;
         width: 610px;
         margin-bottom: 21px;
+        line-height: 53.33px;
         @include sm-d{
             width: 95%;
             font-size: 32px;
+            line-height: 39.33px;
         }
     }
     .main-subttl {
@@ -295,9 +350,10 @@
         @include forBtn;
         font-family: 'Rubik';
         font-size: 25px;
+        border-radius: 30px;
         font-weight: 500;
         background-color: #29246A;
-        padding: 15px 95px 16px;
+        padding: 15px 116px 19px;
         border: 0px solid;
         border-radius: 38px;
         transition: .3s;
@@ -340,6 +396,7 @@ main{
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
+        margin-top: -15px;
         @include lg-m-d{
             flex-direction: column-reverse;
         }
@@ -347,7 +404,8 @@ main{
             height: 660px;
         }
         .game {
-            margin-right: 100px;
+            margin-right: 61px;
+            margin-left: -55px;
             @include lg-m-d{
                 margin: 0px;
             }
@@ -364,10 +422,16 @@ main{
                 width: 85%;
             }
             .game-ttl {
-                @include forTtl;
                 color: #29246A;
                 width: 554px;
                 margin-bottom: 30px;
+                font-family: 'Rubik';
+                font-size: 35px;
+                font-weight: 500;
+                line-height: 43px;
+                letter-spacing: 0em;
+                text-align: left;
+
                 @include lg-d{
                     width: 95%;
                     font-size: 25px;
@@ -376,7 +440,11 @@ main{
             }
             .game-subttl {
                 @include forText;
-                width: 445px;
+                width: 430px;
+                font-family: 'Open Sans';
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 25px;
                 @include lg-d{
                     width: 95%;
                     font-size: 14px;
@@ -395,6 +463,8 @@ main{
         font-weight: 700;
         text-align: center;
         margin-bottom: 61px;
+        font-size: 45px;
+        font-weight: 700;
     }
     .choose-carousel {
         display: flex;
@@ -438,6 +508,10 @@ main{
                 height: 70px;
                 padding-top: 30px;
                 border-radius: 5px;
+                clip-path: polygon(0 0, 100% 0, 100% 74%, 0 93%);
+            }
+            .supreme{
+                background: linear-gradient(250.12deg, #B93CE8 -7.53%, #FF9AEA 82.03%);
             }
             .percent {
                 font-family: 'Open Sans';
@@ -458,7 +532,7 @@ main{
             }
             .condition {
                 font-family: 'Open Sans';
-                font-size: 12px;
+                font-size: 15px;
                 font-weight: 400;
                 color: #4F4F4F;
                 display: flex;
@@ -477,6 +551,9 @@ main{
                 font-family: 'Open Sans';
                 font-size: 18px;
                 font-weight: 400;
+                &:hover{
+                    background-color: #29246ad0;
+                }
             }
         }
         .chosee-carousel-item:first-child{

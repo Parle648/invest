@@ -9,23 +9,41 @@ logInBtn.onclick = function(){
     this.scrollTop = 0
     logIn.classList.add('display');
     document.body.style.overflow='hidden'
-}
-registrBtn.onclick = function(event){
-    registration.classList.add('display');
-    window.pageYOffset='0'
+    logIn.parentNode.style.display='block'
+    scroll(0,0)
 }
 
+closeLogInBlock.addEventListener('click', closeLogIn)
 
-closeLogInBlock.addEventListener('click', function(){
+
+
+const recoverPasswd = document.querySelector('.forgot-passwd')
+
+recoverPasswd.onclick = function(){
+    closeLogIn();
+
+}
+
+function closeLogIn(){
     logIn.classList.remove('display')
     document.body.style.overflow='auto'
-})
+    logIn.parentNode.style.display='none'
+}
+
+// registration pop
+
+registrBtn.onclick = function(event){
+    registration.parentNode.style.display='block'
+    registration.classList.add('display');
+    document.body.style.overflow='hidden'
+    scroll(0,0)
+}
 
 closeRegistrBtn.onclick = function(){
+    registration.parentNode.style.display='none'
     registration.classList.remove('display')
     document.body.style.overflow='auto'
 }
-
 
 //accorderon code
 const accordeonBtn = document.querySelectorAll('.plus');
@@ -50,7 +68,6 @@ accordeonBtn.forEach(function(e){
     }
 
 })
-
 
 //rules pop
 
